@@ -1,6 +1,6 @@
 # vue-city-amies
 
-> A Vue.js project
+>一个基于Vue 2.0 的中国城市选择器插件
 
 ## Build Setup
 
