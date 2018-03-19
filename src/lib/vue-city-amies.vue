@@ -1,15 +1,15 @@
 <template>
   <div>
-    <div v-if="show" class="container">
-      <div class="mask"></div>
-      <div class="plate">
-        <div class="bar">
-          <span class="iconfont icon-ai207" @click="backStep"></span>
+    <div v-if="show" class="amiesContainer">
+      <div class="amiesMask"></div>
+      <div class="amiesPlate">
+        <div class="amiesBar">
+          <span class="iconfont icon-ai207" @click="backamiesStep"></span>
           <span class="iconfont icon-guanbi" @click="close"></span>
         </div>
-        <div class="content">
-          <span v-if="step==0" class="item" v-for="(item, index) in cityList" @click="showCity(index)">{{item.provice}}</span>
-          <span v-if="step==1" class="item" v-for="itm in cities" @click="confirmCity(itm)">{{itm}}</span>
+        <div class="amiesContent">
+          <span v-if="amiesStep==0" class="item" v-for="(item, index) in cityList" @click="showCity(index)">{{item.provice}}</span>
+          <span v-if="amiesStep==1" class="item" v-for="itm in cities" @click="confirmCity(itm)">{{itm}}</span>
         </div>
       </div>
     </div>
@@ -62,24 +62,24 @@ export default {
       {"provice": "香港", "cities": ["香港岛","九龙","新界"]}
       ],
       cities: [],
-      step: 0
+      amiesStep: 0
     }
   },
   methods: {
     showCity(index){
       this.cities = this.cityList[index].cities;
-      this.step = 1;
+      this.amiesStep = 1;
     },
-    backStep(){
-      this.step = 0;
+    backamiesStep(){
+      this.amiesStep = 0;
     },
     confirmCity(city){
       this.$emit("confirmCity", city);
-      this.step = 0;
+      this.amiesStep = 0;
     },
     close(){
       this.$emit("close");
-      this.step = 0;
+      this.amiesStep = 0;
     }
   }
 }
@@ -90,48 +90,48 @@ export default {
   margin: 0;
   padding: 0;
 }
-.container{
+.amiesContainer{
   position: fixed;
   width: 100%;
   height: 100%;
   top: 0;
 }
-.mask{
+.amiesMask{
   position: absolute;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
 }
-.plate{
+.amiesPlate{
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 1000px;
   background: #fff;
 }
-.bar{
+.amiesBar{
   height: 100px;
   line-height: 100px;
   border-bottom: 1px solid #ccc;
   box-sizing: border-box;
   padding: 0 30px;
 }
-.bar .iconfont{
+.amiesBar .iconfont{
   font-size: 46px;
   color: #69c;
 }
-.bar>span:first-child{
+.amiesBar>span:first-child{
   float: left;
   font-size: 70px;
 }
-.bar>span:last-child{
+.amiesBar>span:last-child{
   float: right;
 }
-.content{
+.amiesContent{
   height: 900px;
   background: #ddd;
 }
-.item{
+.amiesContent .item{
   float: left;
   width: 225px;
   height: 80px;
