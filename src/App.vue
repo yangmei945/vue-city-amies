@@ -30,7 +30,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="less" scoped>
 .amiesBtn{
   width: 4rem;
   height: 1rem;

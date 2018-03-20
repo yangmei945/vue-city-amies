@@ -1,7 +1,7 @@
 {
   "name": "vue-city-amies",
   "description": "A Vue.js City Selector",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "author": "Amy <amieshere@aliyun.com>",
   "license": "MIT",
   "private": false,
@@ -15,6 +15,8 @@
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
+    "less": "^3.0.1",
+    "less-loader": "^4.1.0",
     "vue": "^2.5.11"
   },
   "browserslist": [

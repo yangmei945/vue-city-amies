@@ -85,7 +85,8 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="less" scoped>
+@import (reference) 'iconfont.css';
 *{
   margin: 0;
   padding: 0;
