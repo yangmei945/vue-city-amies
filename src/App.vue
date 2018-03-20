@@ -32,12 +32,12 @@ export default {
 
 <style lang="scss">
 .amiesBtn{
-  width: 40rem;
-  height: 10rem;
-  font-size: 4rem;
+  width: 4rem;
+  height: 1rem;
+  font-size: 0.4rem;
 }
 .amiesTxt{
-  font-size: 4rem;
-  margin-top: 3rem;
+  font-size: 0.4rem;
+  margin-top: 0.3rem;
 }
 </style>
