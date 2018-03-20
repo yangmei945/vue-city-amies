@@ -20,6 +20,7 @@
 |@confirmCity|方法，绑定选择城市后的处理函数，注意需要在该处理函数中调用@close绑定的关闭函数，使选择城市后自动关闭选择器|
 |@close|方法，绑定关闭选择器的函数|
 4. 使用效果如下：
-!(https://github.com/yangmei945/vue-city-amies/blob/master/src/assets/example.png)
+![][avatar]
+[avatar]: https://github.com/yangmei945/vue-city-amies/blob/master/src/assets/example.png
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
