@@ -4,8 +4,8 @@
       <div class="amiesMask"></div>
       <div class="amiesPlate">
         <div class="amiesBar">
-          <span class="iconfont icon-ai207" @click="backamiesStep"></span>
-          <span class="iconfont icon-guanbi" @click="close"></span>
+          <img class="amiesBack" src="../assets/back.png" @click="backamiesStep" />
+          <img class="amiesClose" src="../assets/close.png" @click="close" />
         </div>
         <div class="amiesContent">
           <span v-if="amiesStep==0" class="item" v-for="(item, index) in cityList" @click="showCity(index)">{{item.provice}}</span>
@@ -86,7 +86,6 @@ export default {
 </script>
 
 <style lang="less" scoped>
-@import (reference) 'iconfont.css';
 *{
   margin: 0;
   padding: 0;
@@ -117,16 +116,10 @@ export default {
   box-sizing: border-box;
   padding: 0 0.3rem;
 }
-.amiesBar .iconfont{
-  display: inline-block;
-  font-size: 0.46rem;
-  color: #69c;
-}
-.amiesBar>span:first-child{
+.amiesBack{
   float: left;
-  font-size: 0.7rem;
 }
-.amiesBar>span:last-child{
+.amiesClose{
   float: right;
 }
 .amiesContent{
