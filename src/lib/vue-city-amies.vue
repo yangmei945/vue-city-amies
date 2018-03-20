@@ -106,38 +106,38 @@ export default {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 1000px;
+  height: 100rem;
   background: #fff;
 }
 .amiesBar{
-  height: 100px;
-  line-height: 100px;
+  height: 10rem;
+  line-height: 10rem;
   border-bottom: 1px solid #ccc;
   box-sizing: border-box;
-  padding: 0 30px;
+  padding: 0 3rem;
 }
 .amiesBar .iconfont{
-  font-size: 46px;
+  font-size: 4.6rem;
   color: #69c;
 }
 .amiesBar>span:first-child{
   float: left;
-  font-size: 70px;
+  font-size: 7rem;
 }
 .amiesBar>span:last-child{
   float: right;
 }
 .amiesContent{
-  height: 900px;
+  height: 90rem;
   background: #ddd;
 }
 .amiesContent .item{
   float: left;
-  width: 225px;
-  height: 80px;
-  line-height: 80px;
+  width: 22.5rem;
+  height: 8rem;
+  line-height: 8rem;
   background: #fff;
-  margin: 10px;
-  font-size: 30px;
+  margin: 1rem;
+  font-size: 3rem;
 }
 </style>
