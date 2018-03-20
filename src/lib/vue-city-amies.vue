@@ -117,6 +117,7 @@ export default {
   padding: 0 0.3rem;
 }
 .amiesBar .iconfont{
+  display: inline-block;
   font-size: 0.46rem;
   color: #69c;
 }
@@ -132,6 +133,7 @@ export default {
   background: #ddd;
 }
 .amiesContent .item{
+  text-align: center;
   float: left;
   width: 2.25rem;
   height: 0.8rem;
